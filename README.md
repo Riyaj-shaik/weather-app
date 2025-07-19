@@ -11,6 +11,9 @@ A simple React-based Weather App that fetches real-time weather data using the [
 - 🧪 Built with React and Fetch API
 - ✅ Responsive and clean UI
 
+## 🛠️ Deploye
+- Versel - https://weather-app-nine-chi-90.vercel.app/
+
 ## 🛠️ Tech Stack
 
 - React
