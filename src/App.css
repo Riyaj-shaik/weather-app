@@ -1,38 +1,89 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  padding: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container {
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #0077b6;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+  margin-top: 20px;
 }
+select {
+  padding: 10px;
+  width: 220px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.input-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.suggestion-box {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  width: 220px;
+}
+
+.suggestion-box li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background-color: #f0f0f0;
+}
+
